@@ -1,0 +1,11 @@
+{
+  "globalDependencies": {
+    "axios": "registry:dt/axios#0.9.1+20161016142654",
+    "node": "registry:dt/node#6.0.0+20161110151007",
+    "rx": "registry:dt/rx#0.0.0+20160317120654",
+    "shelljs": "registry:dt/shelljs#0.0.0+20161003183410"
+  },
+  "dependencies": {
+    "es6-promise": "registry:common/es6-promise#4.0.0+20161003185919"
+  }
+}

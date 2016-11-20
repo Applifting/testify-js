@@ -1,0 +1,24 @@
+{
+  "name": "testify-js",
+  "version": "1.0.0",
+  "main": "dist/testify.js",
+  "typings": "dist/testify.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.2",
+    "crypto": "^0.0.3",
+    "es6-promise": "^4.0.5",
+    "jshint": "^2.9.4",
+    "portastic": "^1.0.1",
+    "q": "^1.4.1",
+    "rx": "^4.1.0",
+    "shelljs": "^0.7.5",
+    "typescript": "^2.0.9"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "preversion": "npm run build",
+    "version": "git add -A dist",
+    "postversion": "git push && git push --tags"
+  }
+}
