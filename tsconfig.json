@@ -5,7 +5,10 @@
         "module": "commonjs",
         "rootDir": "src",
         "rootDirs" : ["src"],
-        "declaration": true
+        "declaration": true,
+        "typeRoots": [
+            "typings/index.d.ts"
+        ]
     },
     "exclude": [
         "node_modules"

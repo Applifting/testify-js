@@ -1,4 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
 import * as axios from 'axios'
 var pathUtil = require('path');
 var Rx = require('rx');

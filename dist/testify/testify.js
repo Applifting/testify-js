@@ -7,7 +7,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments)).next());
     });
 };
-/// <reference path="../../typings/index.d.ts" />
 const axios = require('axios');
 var pathUtil = require('path');
 var Rx = require('rx');

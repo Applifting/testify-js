@@ -1,4 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
 export declare class Testify {
     /**
      * Base url of the server under the test. It should point to URL where testify is mounted.
