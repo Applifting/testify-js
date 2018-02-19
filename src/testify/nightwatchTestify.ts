@@ -1,5 +1,5 @@
 import {Testify,TestCase} from './testify'
-import {NightWatchBrowser} from 'nightwatch'
+import {NightwatchBrowser} from 'nightwatch'
 
 /**
  * Testify imbues with Nightwatch browser API to perform expectations.
@@ -7,9 +7,9 @@ import {NightWatchBrowser} from 'nightwatch'
 export class NightwatchTestify{
 
     private testify : Testify;
-    private browser : NightWatchBrowser;
+    private browser : NightwatchBrowser;
 
-    constructor(testifyBaseUrl : string, browser : NightWatchBrowser){
+    constructor(testifyBaseUrl : string, browser : NightwatchBrowser){
         this.testify = new Testify(testifyBaseUrl);
         this.browser = browser;
     }
@@ -23,7 +23,7 @@ export class NightwatchTestify{
 
 export class NightwatchTestCase{
     testCase : TestCase;
-    browser : NightWatchBrowser;
+    browser : NightwatchBrowser;
 
     constructor(name,baseUrl,browser){
         this.testCase = new TestCase(name,baseUrl);
@@ -78,9 +78,9 @@ export class NightwatchTestCase{
             }).catch((data) => {
                 console.log(data);
                 if(data.response){
-                    (browser as any).assert.equal(data.response.status,200,"Statement failed: "+ this.testCase.name+ "::" + name);
+                    (browser as any).assert.equal(data.response.status,200,"End failed: "+ this.testCase.name);
                 }else{
-                    browser.assert.ok(false,"Statement failed failed: "+ this.testCase.name + "::" + name);
+                    browser.assert.ok(false,"End failed failed: "+ this.testCase.name);
                 }
                 done();
             });

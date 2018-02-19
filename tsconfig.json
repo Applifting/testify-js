@@ -1,13 +1,21 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "target": "es6",
+        "target": "es5",
         "module": "commonjs",
         "rootDir": "src",
         "rootDirs" : ["src"],
         "declaration": true,
+        "sourceMap": true,
         "typeRoots": [
             "typings/index.d.ts"
+        ],
+        "lib": [
+            "es2015"
+        ],
+        "types": [
+            "node",
+            "shelljs"
         ]
     },
     "exclude": [

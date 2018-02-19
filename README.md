@@ -33,7 +33,7 @@ Please see the following `globals.ts` of Nightwatch how to configure the library
 
 ```TypeScript
 
-import {NightWatchBrowser} from 'nightwatch'
+import {NightwatchBrowser} from 'nightwatch'
 import {Testify, NightwatchTestify} from 'testify-js'
 var selenium = require('selenium-download');
 var settings = {
@@ -87,14 +87,14 @@ export = settings;
 You can then use testify to start test cases and evaluate statements on server side as follows:
 ```TypeScript
     export = {
-        'It sets up a test case' : function(browser : NightWatchBrowser){
+        'It sets up a test case' : function(browser : NightwatchBrowser){
             var testify = browser.globals.testify as NightwatchTestify;
             //Will block until the test case starts and will report failure if something goes wrong
             testify.getTestCase("MyTestCase").start();
             browser.expect('#some').to.be.visibe
         },
 
-        'It can execute statement' : function(browser : NightWatchBrowser){
+        'It can execute statement' : function(browser : NightwatchBrowser){
             var testify = browser.globals.testify as NightwatchTestify;
             //Statements can be executed at any time. Will report failure if the code on the server fails.
             testify.getTestCase("MyTestCase").statement('ensure_user_is_present');
