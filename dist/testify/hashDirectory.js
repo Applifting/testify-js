@@ -28,6 +28,7 @@ function hashDirectoryItem(filepath) {
             return hashFile(filepath, stats);
         }
         else {
+            //throw new Error("Unsupported directory item type");
         }
     });
 }
@@ -40,6 +41,7 @@ function hashDirectoryItemSync(filepath) {
         return hashFileSync(filepath, stats);
     }
     else {
+        //throw new Error("Unsupported directory item type");
     }
 }
 var readdir = Q.denodeify(fs.readdir);
@@ -148,3 +150,4 @@ function hashFileSync(filepath, stats) {
         mode: '100644'
     };
 }
+//# sourceMappingURL=hashDirectory.js.map

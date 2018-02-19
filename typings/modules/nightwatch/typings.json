@@ -1,9 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "https://raw.githubusercontent.com/types/npm-nightwatch/9fc24fc8f4b7de4bdafa0d7f08b519ccbc722dd2/typings.json",
-    "raw": "registry:npm/nightwatch#1.0.0+20160730075309",
-    "main": "nightwatch.d.ts",
-    "name": "nightwatch"
-  }
-}

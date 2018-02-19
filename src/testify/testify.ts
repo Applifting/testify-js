@@ -1,4 +1,4 @@
-import * as axios from 'axios'
+import axios from 'axios'
 var pathUtil = require('path');
 var Rx = require('rx');
 var assert = require('assert');
